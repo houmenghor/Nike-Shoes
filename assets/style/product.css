@@ -38,6 +38,7 @@ html{
 }
 .product .main-product .cart .image img{
     width: 95%;
+    height: 100%;
     object-fit: contain;
     margin-top: -40px;
 }
@@ -71,10 +72,132 @@ html{
     background: linear-gradient(to right,#c72092,#6c14d0);
 }
 
-
+.icons span {
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  border-radius: 50%;
+  transform: translateY(-10px);
+  position: absolute;
+}
 /* end products 
 --------------------------------*/
+/* Cart Item Styles */
+.cart-item {
+  box-shadow: 0 0 8px #ddd;
+  padding: 10px;
+  border-radius: 10px;
+}
 
+.cart-item-image-wrapper {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+.cart-item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cart-item-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-item-name {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.cart-item-price {
+  font-size: 0.9rem;
+}
+
+.btn-remove-from-cart {
+  font-size: 0.8rem;
+  padding: 5px 10px;
+}
+
+/* Style for Empty Cart Message */
+.offcanvas-body.listCart {
+  padding: 15px;
+}
+
+.offcanvas-body.listCart .empty-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 20px;
+}
+/* Cart Empty Message */
+.cart-empty {
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+}
+
+.cart-empty h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.cart-empty p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Quantity Controls */
+.quantity-control {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align buttons to the right */
+}
+
+.quantity-control button {
+  width: 30px;
+  height: 30px;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.quantity-control span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Cart Footer */
+.cart-footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cart-footer h5 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.cart-footer .btn-remove-all {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.custom-toast {
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom-toast .bi {
+  font-size: 20px;
+}
 
 @media (min-width: 576px) and (max-width: 767.98px) {
 

@@ -171,7 +171,9 @@ html {
 .menu-phone .full-menu .icons.icon-phone i {
     font-size: 20px;
 }
-
+.menu-phone .full-menu .icons.icon-phone .fa-bars{
+    margin-left: 20px;
+}
 .menu-phone .full-menu .logo.logo-phone h1 {
     font-size: 35px;
 }
