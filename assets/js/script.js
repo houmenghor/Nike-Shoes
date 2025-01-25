@@ -124,14 +124,11 @@ function showToast(message, type) {
   $("body").append(toastHtml);
 
   setTimeout(() => {
-    $(".custom-toast").fadeOut(1000, function () {
+    $(".custom-toast").fadeOut(500, function () {
       $(this).remove();
     });
-  }, 3000);
+  }, 2000);
 }
-
-
-
 
 
 // Function to update the cart UI
@@ -142,8 +139,8 @@ function addProductToCart() {
   if (cart.length === 0) {
     listCart.html(`
       <div class="cart-empty text-center py-5">
-        <h5>Your cart is empty</h5>
-        <p>Add some products to the cart.</p>
+        <h3>Your cart is empty</h3>
+        <p>Start shopping now.</p>
       </div>
     `);
     $(".quantity").text(0); // Update cart item count to 0
@@ -180,8 +177,13 @@ function addProductToCart() {
 
   listCart.append(`
     <div class="cart-footer mt-4 text-center">
-      <h5>Total Amount: $${totalAmount.toFixed(2)}</h5>
-      <button class="btn btn-danger btn-remove-all">Remove All</button>
+      <h6 class="fw-bold">Amount to pay: $${totalAmount.toFixed(2)}</h6>
+      <div>
+        <div class="row">
+          <button class="btn btn-dark btn-checkout">Checkout</button>
+          <button class="btn btn-danger btn-remove-all">Remove All</button>
+        </div>
+      </div>
     </div>
   `);
 
@@ -256,10 +258,10 @@ $(document).ready(function () {
   $(".listCart").on("click", ".btn-minus-quantity", function () {
     const itemIndex = $(this).data("index");
     if (cart[itemIndex].quantity > 1) {
-     cart[itemIndex].quantity -= 1;
+      cart[itemIndex].quantity -= 1;
     } else {
       cart.splice(itemIndex, 1)[0]; // Remove item if quantity reaches 0
-        showToast(`Product has been deleted successfully!`, "danger");  
+      showToast(`Product has been deleted successfully!`, "danger");
     }
     saveCartToLocalStorage(); // Save updated cart
     addProductToCart(); // Re-render UI, including cart icon
@@ -274,6 +276,11 @@ $(document).ready(function () {
     showToast("All Products has been deleted successfully!", "danger");
   });
 });
+
+function changeImage(small){
+  var full = document.getElementById("imagebox")
+  full.src = small.src
+}
 
 
 
