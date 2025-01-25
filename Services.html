@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servises</title>
+    <title>Nike</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
         integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -11,11 +13,26 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="image/logo.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
 </head>
+
 <body>
+    <!-- Search -->
+    <div class="search-box bg-dark position-relative">
+        <div class="search-wrap">
+          <div class="close-button">
+            <i class="close fa-solid fa-xmark"></i>
+          </div>
+          <form id="search-form" class="text-lg-center text-md-left pt-3" action="index.html" method="get">
+            <input type="text" class="search-input" placeholder="Search...">
+            <svg class="search">
+              <use xlink:href="#search"></use>
+            </svg>
+          </form>
+        </div>
+      </div>
     <!-- menu desktop screen -->
-    <div class="container-fluid menu-desktop">
+    <div class="container-fluid menu-desktop user-items">
         <div class="row full-menu">
             <div class="logo col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
                 <h1>Shoe<span>s</span></h1>
@@ -40,23 +57,54 @@
                 </ul>
             </div>
             <div class="icons col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
-                <a href="#"><i class="fa-solid fa-heart"></i></a>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#" class="search-item border-0" data-bs-toggle="collapse" data-bs-target="#search-box" aria-label="Toggle navigation"><i class="fa-solid fa-search"></i></a>
+                <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><i class="fa-solid fa-cart-shopping"></i></a>
                 <a href="login.html"><i class="fa-solid fa-user"></i></a>
-
             </div>
         </div>
     </div>
+    <!-- cart-items-container -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Your card is empty</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="amount-to-pay">
+                <p class="p">Amount to pay</p>
+                <p class="money">US $100.00</p>
+
+            </div>
+            <hr class="hr">
+            <div class="totall">
+                <span>Total</span>
+                <p>US $120</p>
+            </div>
+            <div class="save">
+                <span class="span">Save</span>
+                <p class="p">-US $11</p>
+            </div>
+            <div class="delivery">
+                <span class="span">Delivery fee</span>
+                <p class="p">US $2</p>
+            </div>
+
+            <div class="checkout">
+                <button class="checkout">Checkout</button>
+            </div>
+        </div>
+      </div>
+    <!-- end of cart-container -->
     <!-- menu phone screen -->
-    <div class="container-fluid menu-phone">
+    <div class="container-fluid menu-phone user-items">
         <div class="row full-menu">
             <div class="col-sm-6 col-6 logo logo-phone">
                 <h1>Shoe<span>s</span></h1>
             </div>
 
             <div class="col-sm-6 col-6 icons icon-phone">
-                <a href="#"><i class="fa-solid fa-heart"></i></a>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="" class="search-item border-0" data-bs-toggle="collapse" data-bs-target="#search-box" aria-label="Toggle navigation"><i class="fa-solid fa-search"></i></a>
+                <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><i class="fa-solid fa-cart-shopping"></i></a>
                 <a href="login.html"><i class="fa-solid fa-user"></i></a>
                 <a href="" data-bs-toggle="collapse" data-bs-target="#navbarNav"><i class="fas fa-bars"></i></a>
             </div>
@@ -81,7 +129,60 @@
             </div>
         </div>
     </div>
-    <h1 class="text-center">Services</h1>
+    <div class="container-fluid product" style="height: 100vh;">
+        <h1>Services</h1>
+    </div>
+    <!-- footer desktop screen -->
+    <div class="container-fluid footer-desktop mt-3">
+        <div class="row full-footer">
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-12 contact title-footer">
+                <h1 class="">Contact</h1>
+                <div class="contact-icons icons-footer ">
+                    <a href="#">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Sangkat Tuek Thla, Phnom Penh</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+855 87947425</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>menghorhou@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-12 get-help title-footer">
+                <h1 class="">Get Help</h1>
+                <div class="get-help-icons icons-footer">
+                    <a href="#" class="center">FAQ</a>
+                    <a href="#" class="center">Shopping</a>
+                    <a href="#" class="center">Returns</a>
+                    <a href="#" class="center">Payment Options</a>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-12 our-stores title-footer">
+                <h1 class="">Our Stores</h1>
+                <div class="get-help-icons icons-footer">
+                    <a href="#" class="center">Phnom Penh</a>
+                    <a href="#" class="center">Prey Veng</a>
+                    <a href="#" class="center">Kandal</a>
+                    <a href="#" class="center">Kampong Cham</a>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-12 follow-us title-footer">
+                <h1 class="">Follow Us</h1>
+                <div class="follow-us-icons icons-footer">
+                    <a href="https://www.facebook.com/houmenghorr" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a> -->
+                    <a href="https://www.instagram.com/menghorhou/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@kaizenn99990" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="./assets/js/script.js"></script>
 </html>

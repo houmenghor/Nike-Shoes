@@ -13,12 +13,28 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="image/logo.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/style/login.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/register.css">
 </head>
 
 <body>
+    <!-- Search -->
+    <div class="search-box bg-dark position-relative">
+        <div class="search-wrap">
+          <div class="close-button">
+            <i class="close fa-solid fa-xmark"></i>
+          </div>
+          <form id="search-form" class="text-lg-center text-md-left pt-3" action="index.html" method="get">
+            <input type="text" class="search-input" placeholder="Search...">
+            <svg class="search">
+              <use xlink:href="#search"></use>
+            </svg>
+          </form>
+        </div>
+      </div>
     <!-- menu desktop screen -->
-    <div class="container-fluid menu-desktop">
+    <div class="container-fluid menu-desktop user-items">
         <div class="row full-menu">
             <div class="logo col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
                 <h1>Shoe<span>s</span></h1>
@@ -43,22 +59,25 @@
                 </ul>
             </div>
             <div class="icons col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
-                <a href="#"><i class="fa-solid fa-heart"></i></a>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#" class="search-item border-0" data-bs-toggle="collapse" data-bs-target="#search-box" aria-label="Toggle navigation"><i class="fa-solid fa-search"></i></a>
+                <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><i
+                        class="fa-solid fa-cart-shopping"></i></a>
                 <a href="login.html"><i class="fa-solid fa-user"></i></a>
             </div>
         </div>
     </div>
+
     <!-- menu phone screen -->
-    <div class="container-fluid menu-phone">
+    <div class="container-fluid menu-phone user-items">
         <div class="row full-menu">
             <div class="col-sm-6 col-6 logo logo-phone">
                 <h1>Shoe<span>s</span></h1>
             </div>
 
             <div class="col-sm-6 col-6 icons icon-phone">
-                <a href="#"><i class="fa-solid fa-heart"></i></a>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#" class="search-item border-0" data-bs-toggle="collapse" data-bs-target="#search-box" aria-label="Toggle navigation"><i class="fa-solid fa-search"></i></a>
+                <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><i
+                        class="fa-solid fa-cart-shopping"></i></a>
                 <a href="login.html"><i class="fa-solid fa-user"></i></a>
                 <a href="" data-bs-toggle="collapse" data-bs-target="#navbarNav"><i class="fas fa-bars"></i></a>
             </div>
@@ -83,8 +102,162 @@
             </div>
         </div>
     </div>
-    <h1 class="text-center">Register Page</h1>
+
+    <!-- cart-items-container -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Your card is empty</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="amount-to-pay">
+                <p class="p">Amount to pay</p>
+                <p class="money">US $100.00</p>
+
+            </div>
+            <hr class="hr">
+            <div class="totall">
+                <span>Total</span>
+                <p>US $120</p>
+            </div>
+            <div class="save">
+                <span class="span">Save</span>
+                <p class="p">-US $11</p>
+            </div>
+            <div class="delivery">
+                <span class="span">Delivery fee</span>
+                <p class="p">US $2</p>
+            </div>
+
+            <div class="checkout">
+                <button class="checkout">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- login desktop screen -->
+    <div class="container-fluid login-desktop">
+        <div class="row login-page">
+            <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 left-page">
+                <div class="image">
+                    <p class="title">Welcome back</p>
+                    <img src="./assets/image/logshoes.png" alt="">
+                </div>
+            </div>
+            <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 right-page">
+                <div class="login-form">
+                    <!-- /* From Uiverse.io by akshat-patel28 */ -->
+                    <div class="form-container">
+                        <!-- <p class="title">Welcome back</p> -->
+                        <form class="form">
+                            <label for="" class="label-user">Username</label>
+                            <div class="inputForm">
+                                <i class="fas fa-user"></i>
+                                <input type="text" class="input" placeholder="Username">
+                            </div>
+                            <label for="" class="label-user">Email</label>
+                            <div class="inputForm">
+                                <i class="fas-solid fa-at"></i>
+                                <input type="email" class="input" placeholder="Email">
+                            </div>
+                            <label for="" class="label-password">Password</label>
+                            <div class="inputForm">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" class="input" placeholder="Password">
+                            </div>
+                            <!-- <p class="page-link">
+                                <span class="page-link-label">Forgot Password?</span>
+                            </p> -->
+                            <button class="form-btn">Sign up</button>
+                        </form>
+                        <p class="sign-up-label">
+                            <span>Already have an account?</span><a href="login.html" class="sign-up-link">Login</a>
+                        </p>
+                        <div class="buttons-container">
+                            <div class="apple-login-button">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" class="apple-icon"
+                                    viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M747.4 535.7c-.4-68.2 30.5-119.6 92.9-157.5-34.9-50-87.7-77.5-157.3-82.8-65.9-5.2-138 38.4-164.4 38.4-27.9 0-91.7-36.6-141.9-36.6C273.1 298.8 163 379.8 163 544.6c0 48.7 8.9 99 26.7 150.8 23.8 68.2 109.6 235.3 199.1 232.6 46.8-1.1 79.9-33.2 140.8-33.2 59.1 0 89.7 33.2 141.9 33.2 90.3-1.3 167.9-153.2 190.5-221.6-121.1-57.1-114.6-167.2-114.6-170.7zm-105.1-305c50.7-60.2 46.1-115 44.6-134.7-44.8 2.6-96.6 30.5-126.1 64.8-32.5 36.8-51.6 82.3-47.5 133.6 48.4 3.7 92.6-21.2 129-63.7z">
+                                    </path>
+                                </svg>
+                                <span>Sign up with Apple</span>
+                            </div>
+                            <div class="google-login-button">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" x="0px"
+                                    y="0px" class="google-icon" viewBox="0 0 48 48" height="1em" width="1em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12
+	c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24
+	c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"></path>
+                                    <path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657
+	C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"></path>
+                                    <path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36
+	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"></path>
+                                    <path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571
+	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z">
+                                    </path>
+                                </svg>
+                                <span>Sign up with Google</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- footer desktop screen -->
+     <div class="container-fluid footer-desktop mt-3">
+        <div class="row full-footer">
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-12 contact title-footer">
+                <h1 class="">Contact</h1>
+                <div class="contact-icons icons-footer ">
+                    <a href="#">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Sangkat Tuek Thla, Phnom Penh</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+855 87947425</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>menghorhou@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-12 get-help title-footer">
+                <h1 class="">Get Help</h1>
+                <div class="get-help-icons icons-footer">
+                    <a href="#" class="center">FAQ</a>
+                    <a href="#" class="center">Shopping</a>
+                    <a href="#" class="center">Returns</a>
+                    <a href="#" class="center">Payment Options</a>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-12 our-stores title-footer">
+                <h1 class="">Our Stores</h1>
+                <div class="get-help-icons icons-footer">
+                    <a href="#" class="center">Phnom Penh</a>
+                    <a href="#" class="center">Prey Veng</a>
+                    <a href="#" class="center">Kandal</a>
+                    <a href="#" class="center">Kampong Cham</a>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-12 follow-us title-footer">
+                <h1 class="">Follow Us</h1>
+                <div class="follow-us-icons icons-footer">
+                    <a href="https://www.facebook.com/houmenghorr" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a> -->
+                    <a href="https://www.instagram.com/menghorhou/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@kaizenn99990" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="./assets/js/script.js"></script>
 </html>

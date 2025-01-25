@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width: 70%;
+        overflow: hidden;
+        margin: auto;
+    }
+    .container .item{
+        width: 23%;
+        height:  300px;
+        float: left;
+        margin: 10px 1%;
+        box-sizing: 1px 1px 3px grey;
+    }
+    .item .pic
+    {
+        width: 100%;
+        height: 70%;
+    }
+    .item .pic img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .item .price{
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-family: sans-serif;
+        color: blue;
+        background-color: goldenrod;
+    }
+    .Add-cart{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        font-size: 10px;
+        color: white;
+        transform: translateX(40px);
+        cursor: pointer;
+    }
+    .ListCard{
+        width: 300px;
+        top: 0;
+        right: 0;
+        min-height: 100vh;
+        position: absolute;
+        background-color: chocolate;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .item-card{
+        width: 100%;
+        height: 100px;
+        background-color: black;
+    }
+    .item-card .pic{
+        width: 100px;
+        height: 100px;
+        background-color: grey;
+        border-radius: 50%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .item-card .pic img{
+        object-fit:  contain;
+        height: 100%;
+        height: 100%;
+    }
+    .item-card .des{
+        width: 100px;
+        font-size: 30px;
+        color: white;
+        float: left;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item">
+            <div class="pic">
+                <img src="https://phorn-khouch.netlify.app/image/shirt1.png" alt="">
+            </div>
+            <div class="price">
+                10$
+                <div class="Add-cart">
+                    Add Cart
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ListCard">
+        <!-- <div class="item-card">
+            <div class="pic">
+                <img src="https://phorn-khouch.netlify.app/image/shirt1.png" alt="">
+            </div>
+            <div class="des" >
+                price 10$
+            </div>
+        </div> -->
+    </div>
+</body>
+<script>
+    var btnAdd=document.querySelector(".Add-cart");
+    btnAdd.addEventListener("click",()=>{
+        var item_card=`
+            <div class="item-card">
+                <div class="pic">
+                    <img src="https://phorn-khouch.netlify.app/image/shirt1.png" alt="">
+                </div>
+                <div class="des" >
+                    price 10$
+                </div>
+            </div>
+        `;
+        var newElement = document.createElement("div");
+        document.querySelector(".ListCard").append(item_card);
+    })
+</script>
+</html>

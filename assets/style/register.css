@@ -1,0 +1,26 @@
+/* 4.size col-sm*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .left-page .image img {
+      width: 5%;
+      margin-top: 10px;
+    }
+    
+  }
+
+  /* 5.size col-12*/
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .left-page .image img {
+      width: 5%;
+      margin-top: 10px;
+    }
+  }
+
+  /* 6.size real-phone*/
+@media (max-width: 450px) {
+
+    .left-page .image img {
+      width: 20%;
+      margin-top: 10px;
+    }
+  }
