@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="image/logo.png">
-    <link rel="stylesheet" href="./assets/style/style.css">
-    <link rel="stylesheet" href="./assets/style/product.css">
-    <link rel="stylesheet" href="./assets/style/about.css">
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/product.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
@@ -25,17 +25,17 @@
     <!-- Search -->
     <div class="search-box bg-dark position-relative">
         <div class="search-wrap">
-          <div class="close-button">
-            <i class="close fa-solid fa-xmark"></i>
-          </div>
-          <form id="search-form" class="text-lg-center text-md-left pt-3" action="index.html" method="get">
-            <input type="text" class="search-input" placeholder="Search...">
-            <svg class="search">
-              <use xlink:href="#search"></use>
-            </svg>
-          </form>
+            <div class="close-button">
+                <i class="close fa-solid fa-xmark"></i>
+            </div>
+            <form id="search-form" class="text-lg-center text-md-left pt-3" action="index.html" method="get">
+                <input type="text" class="search-input" placeholder="Search...">
+                <svg class="search">
+                    <use xlink:href="#search"></use>
+                </svg>
+            </form>
         </div>
-      </div>
+    </div>
     <!-- menu desktop screen -->
     <div class="container-fluid menu-desktop user-items">
         <div class="row full-menu">
@@ -65,7 +65,8 @@
                 <a href="#" class="search-item border-0" data-bs-toggle="collapse" data-bs-target="#search-box"
                     aria-label="Toggle navigation"><i class="fa-solid fa-search"></i></a>
                 <a href="login.html"><i class="fa-solid fa-user"></i></a>
-                <a class="shopping" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <a class="shopping" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample">
                     <i class="fa-solid fa-cart-shopping"></i>
                     <span class="">
                         <p class="quantity d-flex justify-content-center align-items-center">0</p>
@@ -81,31 +82,22 @@
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body listCart">
-            
+
         </div>
     </div>
     <!-- end of cart-container -->
-    <!-- menu phone screen -->
-    <div class="container-fluid menu-phone user-items">
+     <!-- menu phone screen -->
+     <div class="container-fluid menu-phone user-items">
         <div class="row full-menu">
             <div class="col-sm-6 col-6 logo logo-phone">
                 <h1>Shoe<span>s</span></h1>
             </div>
 
             <div class="col-sm-6 col-6 icons icon-phone">
-                <a href="" class="search-item border-0" data-bs-toggle="collapse" data-bs-target="#search-box"
-                    aria-label="Toggle navigation"><i class="fa-solid fa-search"></i></a>
-                    
-                <a href="login.html"><i class="fa-solid fa-user"></i></a>
-                <a class="shopping" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span class="">
-                        <p class="quantity d-flex justify-content-center align-items-center">0</p>
-                    </span>
-                </a>
+
                 <a href="" data-bs-toggle="collapse" data-bs-target="#navbarNav"><i class="fas fa-bars"></i></a>
             </div>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <nav class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
@@ -122,61 +114,76 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Services</a>
                     </li>
+                    
+                    <div class="icons-phone">
+                        <a href="" class="search-item border-0" data-bs-toggle="collapse" data-bs-target="#search-box"
+                            aria-label="Toggle navigation"><i class="fa-solid fa-search"></i></a>
+                        <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                        <a class="shopping" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                            aria-controls="offcanvasExample">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="num">
+                                <p class="quantity d-flex justify-content-center align-items-center">0</p>
+                            </span>
+                        </a>
+                    </div>
                 </ul>
-            </div>
+            </nav>
         </div>
     </div>
 
-<!-- start about -->
+    <!-- start about -->
 
-<!-- About -->
-<div class="about container-fluid" id="About">
-    <h1>About us</h1>
-    <div class="row about_main">
-        <div class="image col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-            <div class="bigImage">
-                <img src="./assets/image/red_shoes1.png" alt="" id="imagebox">
+    <!-- About -->
+    <div class="about container-fluid" id="About">
+        <h1>About us</h1>
+        <div class="row about_main">
+            <div class="image col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                <div class="bigImage">
+                    <img src="./assets/images/red_shoes1.png" alt="" id="imagebox">
+                </div>
+                <div class="smallImage">
+                    <div class="img1">
+                        <img src="./assets/images/red_shoes1.png" alt="" onclick="changeImage(this)">
+                    </div>
+                    <div class="img1">
+                        <img src="./assets/images/red_shoes2.png" alt="" onclick="changeImage(this)">
+                    </div>
+                    <div class="img1">
+                        <img src="./assets/images/red_shoes3.png" alt="" onclick="changeImage(this)">
+                    </div>
+                    <div class="img1">
+                        <img src="./assets/images/red_shoes4.png" alt="" onclick="changeImage(this)">
+                    </div>
+                </div>
             </div>
-            <div class="smallImage">
-                <div class="img1">
-                    <img src="./assets/image/red_shoes1.png" alt="" onclick="changeImage(this)">
-                </div>
-                <div class="img1">
-                    <img src="./assets/image/red_shoes2.png" alt="" onclick="changeImage(this)">
-                </div>
-                <div class="img1">
-                    <img src="./assets/image/red_shoes3.png" alt="" onclick="changeImage(this)">
-                </div>
-                <div class="img1">
-                    <img src="./assets/image/red_shoes4.png" alt="" onclick="changeImage(this)">
-                </div>
+            <div class="about_text col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                <h2>What's make our shop special?</h2>
+                <br>
+                <span>
+                    At Shoes , we’re more than just a store—we’re a community of sneaker enthusiasts who live
+                    and breathe Nike. Our mission is to bring you the latest, most stylish, and performance-driven Nike
+                    shoes, ensuring you always step out in comfort, confidence, and innovation.
+                    <br/>
+                    What sets us apart? <br/>
+                    ✔️ Authenticity Guaranteed – Every pair of Nike shoes we sell is 100% original. <br/>
+                    ✔️ Exclusive Collections – Get access to the newest and most sought-after Nike releases. <br/>
+                    ✔️ Unmatched Customer Experience – Our team is dedicated to helping you find the perfect fit,
+                    whether for sports, casual wear, or sneaker collecting. <br/>
+                    ✔️ Fast & Secure Shipping – We make sure your favorite Nike sneakers reach you safely and quickly. <br/>
+
+                    Join us and experience the best in Nike footwear, fashion, and innovation.
+
+                    🚀 Shop Now & Elevate Your Sneaker Game!
+
+                </span>
             </div>
         </div>
-        <div class="about_text col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-            <h2>What's make our shop special?</h2>
-            <br>
-            <span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis odio magnam eveniet fuga ex
-                repellat, obcaecati quaerat neque repellendus, corrupti, ad quo doloribus nesciunt sed praesentium
-                quos consequatur at itaque.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quam aut enim eum qui eveniet? Animi
-                quaerat doloribus iure id voluptate necessitatibus rerum fuga, tempora, saepe ea deserunt architecto
-                eum.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam sequi asperiores? Et
-                magni at quia aliquid magnam non animi aperiam ipsam pariatur! Atque veniam accusantium dicta maxime
-                minus velit.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae architecto culpa consectetur
-                fuga neque, hic, reiciendis aliquam cum repudiandae, dolore atque? Iure quas voluptatum et id earum
-                ducimus eveniet fugit.
-               
-            </span>
-        </div>
+
+
     </div>
 
-    
-</div>
-
- <!-- end about -->
+    <!-- end about -->
 
     <!-- footer desktop screen -->
     <div class="container-fluid footer-desktop mt-3">
@@ -219,10 +226,13 @@
             <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-12 follow-us title-footer">
                 <h1 class="">Follow Us</h1>
                 <div class="follow-us-icons icons-footer">
-                    <a href="https://www.facebook.com/houmenghorr" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/houmenghorr" target="_blank"><i
+                            class="fa-brands fa-facebook-f"></i></a>
                     <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a> -->
-                    <a href="https://www.instagram.com/menghorhou/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.tiktok.com/@kaizenn99990" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/menghorhou/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@kaizenn99990" target="_blank"><i
+                            class="fa-brands fa-tiktok"></i></a>
                 </div>
             </div>
         </div>
@@ -231,4 +241,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="./assets/js/script.js"></script>
+
 </html>

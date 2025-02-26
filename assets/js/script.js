@@ -4,7 +4,7 @@ const products = [
     name: "Nike Air Force 1 '07",
     price: 115,
     description: "A classic basketball-inspired sneaker with a durable leather upper, comfortable Air cushioning, and timeless streetwear appeal.",
-    image: "./assets/image/nike-air-force-1.webp",
+    image: "./assets/images/nike-air-force-1.webp",
     category: "women's shoes"
   },
   {
@@ -12,7 +12,7 @@ const products = [
     name: "Nike Air Max 90 Drift",
     price: 160,
     description: "Known for its visible Air unit in the heel, this sneaker delivers lightweight cushioning and a bold, retro design that remains a fan favorite.",
-    image: "./assets/image/Nike Air Max 90 Drift.webp",
+    image: "./assets/images/Nike Air Max 90 Drift.webp",
     category: "men's shoes"
   },
   {
@@ -20,7 +20,7 @@ const products = [
     name: "Air Jordan 1 Low SE",
     price: 125,
     description: "The iconic basketball shoe that started the Jordan brand, featuring premium leather, high-top support, and legendary colorways.",
-    image: "./assets/image/Air Jordan 1 Low SE.webp",
+    image: "./assets/images/Air Jordan 1 Low SE.webp",
     category: "women's shoes"
   },
   {
@@ -28,7 +28,7 @@ const products = [
     name: "Nike Dunk Low Retro",
     price: 115,
     description: "A low-top skate and lifestyle sneaker with a padded collar, durable materials, and vibrant color combinations for everyday wear.",
-    image: "./assets/image/Nike Dunk Low Retro.webp",
+    image: "./assets/images/Nike Dunk Low Retro.webp",
     category: "men's shoes"
   },
   {
@@ -36,7 +36,7 @@ const products = [
     name: "Nike InfinityRN",
     price: 190,
     description: "Custom Women's Road Running Shoes",
-    image: "./assets/image/Nike InfinityRN 4 By You.webp",
+    image: "./assets/images/Nike InfinityRN 4 By You.webp",
     category: "women's shoes"
   },
   {
@@ -44,7 +44,7 @@ const products = [
     name: "Nike Vaporfly 3",
     price: 260,
     description: "A lightweight, elite running shoe with ZoomX foam and a carbon fiber plate for maximum energy return and speed.",
-    image: "./assets/image/Nike Vaporfly 3.webp",
+    image: "./assets/images/Nike Vaporfly 3.webp",
     category: "men's shoes"
   },
   {
@@ -52,7 +52,7 @@ const products = [
     name: "Nike Blazer Mid '77",
     price: 73.97,
     description: "A vintage-style sneaker with suede and leather overlays, a mid-top cut, and a classic herringbone outsole for traction and style.",
-    image: "./assets/image/Nike Blazer Mid '77.webp",
+    image: "./assets/images/Nike Blazer Mid '77.webp",
     category: "women's shoes"
   },
   {
@@ -60,7 +60,7 @@ const products = [
     name: "Nike Pegasus 41",
     price: 140,
     description: "A versatile and reliable running shoe with responsive React foam cushioning and a breathable mesh upper for daily training.",
-    image: "./assets/image/Nike Pegasus 41.webp",
+    image: "./assets/images/Nike Pegasus 41.webp",
     category: "men's shoes"
   },
   {
@@ -68,7 +68,7 @@ const products = [
     name: "LeBron XXII",
     price: 200,
     description: "A basketball sneaker built for power and agility, featuring a Zoom Air unit, premium materials, and a secure lockdown fit.",
-    image: "./assets/image/LeBron XXII.webp",
+    image: "./assets/images/LeBron XXII.webp",
     category: "women's shoes"
   },
   {
@@ -76,7 +76,7 @@ const products = [
     name: "Nike Metcon 9",
     price: 150,
     description: "A durable and stable training shoe with a grippy outsole, reinforced midfoot, and responsive cushioning for intense workouts and weightlifting.",
-    image: "./assets/image/Nike Metcon 9.webp",
+    image: "./assets/images/Nike Metcon 9.webp",
     category: "women's shoes"
   },
 ]

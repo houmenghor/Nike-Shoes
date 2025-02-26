@@ -75,8 +75,8 @@
     background: linear-gradient(to left, #c72092 , #6c14d0);
     background-clip: text;
     color: transparent;
-    line-height: 22px;
-    text-align: justify;
+    line-height: 25px;
+    /* text-align: justify; */
     padding: 25px 30px;
     border: 2px solid #c72092;
     border-radius: 20px;
