@@ -166,9 +166,9 @@ function addProductToCart() {
           <p class="cart-item-total-price text-muted mb-0">Total: $${itemTotalPrice}</p>
         </div>
         <div class="quantity-control d-flex align-items-center">
-          <button class="btn btn-sm btn-secondary btn-minus-quantity" data-index="${index}">-</button>
+          <button class="btn btn-sm btn-danger btn-minus-quantity rounded-circle fs-3" data-index="${index}">-</button>
           <span class="mx-2">${item.quantity}</span>
-          <button class="btn btn-sm btn-secondary btn-plus-quantity" data-index="${index}">+</button>
+          <button class="btn btn-sm btn-primary btn-plus-quantity rounded-circle fs-3" data-index="${index}">+</button>
         </div>
       </div>
     `;
